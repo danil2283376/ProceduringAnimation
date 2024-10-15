@@ -13,7 +13,7 @@ public class LegAimGround : MonoBehaviour
         layerGround = LayerMask.GetMask("Ground");
     }
 
-    private void Update()
+    private void FixedUdpate()
     {
         Ray ray = new Ray(transform.position + Vector3.up * _offset, Vector3.down);
         //Debug.DrawLine(ray.origin, Vector3.down, Color.white);
